@@ -10,34 +10,53 @@
 			active-text-color="#ffd04b"
 			@select="handleSelect"
 		>
-  			<el-menu-item v-for="(item, index) in navInfo" :key="index" :index="item.index">{{ item.label }}</el-menu-item>
+  			<el-menu-item v-if="navInfo.length" v-for="(item, index) in navInfo" :key="index" :index="item.index">{{ item.label }}</el-menu-item>
 		</el-menu>
 	</div>
 </template>
 <script>
+import { ajaxGet } from '@/utils/interceptor'
+import { mapMutations } from 'vuex'
+import { getCookie } from '@/utils/cookies'
 export default {
+	mounted () {
+		if (getCookie('logining')) {
+			this.getHeaders()
+		} else {
+			this.$router.push('/login')
+		}
+	},
 	data () {
 		return {
-			activeIndex: '1',
-			navInfo: [
-				{ index: '1', label: '处理中心1' },		
-				{ index: '2', label: '处理中心2' },		
-				{ index: '3', label: '处理中心3' },		
-				{ index: '4', label: '处理中心4' }		
-			]
+			activeIndex: window.sessionStorage.getItem('currentModule') || '1',
+			currentModule: 'Node',
+			navInfo: []
 		}
 	},
 	methods: {
+		...mapMutations(['changeLeftNavInfo']),
+		getHeaders () {
+			ajaxGet('/header').then(res => {
+				if (res.data.code === 200) {
+					this.navInfo = res.data.body
+				}
+			})
+		},
 		handleSelect (val) {
-			this.activeIndex = val
+			this.currentModule = this.navInfo.filter(item => item.index === val)[0].index
+			window.sessionStorage.setItem('currentModule', this.currentModule)
+			if (!getCookie('logining')) {
+				this.$router.push('/login')
+			}
 		}
 	},
 	watch: {
-		activeIndex (valNew, valOld) {
+		currentModule (valNew, valOld) {
 			if (valNew !== valOld) {
-				console.log(valNew)
+				this.changeLeftNavInfo(valNew)
+				this.$router.push('/nav/welcome')
 			}
-		}
+		} 
 	}
 }
 </script>

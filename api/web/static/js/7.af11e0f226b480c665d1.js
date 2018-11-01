@@ -1,0 +1,2 @@
+webpackJsonp([7],{"V+V2":function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});s("zsD7");var n={render:function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"title"},[this._v(this._s(this.words))])},staticRenderFns:[]};var r=s("C7Lr")({data:function(){return{words:"欢迎来到笔记整理界面"}}},n,!1,function(t){s("jVDF")},"data-v-38d7a8d1",null);e.default=r.exports},jVDF:function(t,e){}});
+//# sourceMappingURL=7.af11e0f226b480c665d1.js.map

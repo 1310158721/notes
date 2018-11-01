@@ -10,7 +10,7 @@
       		active-text-color="#409eff">
       		<div v-for="(item, index) in navInfo" :key="index">
       			<!-- 没有子列表的 -->
-      			<el-menu-item v-if="!item.children || item.children.length === 0" :index="item.id">
+      			<el-menu-item v-if="!item.children || item.children.length === 0" :index="item.id" @click="link(item)">
 	      			<i :class="item.icon"></i>
 	      			<template slot="title">{{ item.label }}</template>
 	      		</el-menu-item>
@@ -20,7 +20,7 @@
 	      				<i :class="item.icon" v-if="item.icon"></i>
 	          			<span>{{ item.label }}</span>
 	        		</template>
-	          		<el-menu-item v-for="(_item, _index) in item.children" :index="_item.id">
+	          		<el-menu-item v-for="(_item, _index) in item.children" :index="_item.id" :key="_index" @click="link(_item)">
 	          			<i :class="_item.icon" v-if="_item.icon"></i>
 	          			{{ _item.label }}
 	          		</el-menu-item>
@@ -30,48 +30,51 @@
 	</div>
 </template>
 <script>
+import { ajaxGet } from '@/utils/interceptor'
+import { setCookie, getCookie, delCookies } from '@/utils/cookies'
+import { mapGetters } from 'vuex'
 export default {
+	mounted () {
+		this.getLeftNav()
+	},
 	data () {
 		return {
-			activeIndex: '0',
-			navInfo: [
-				{
-					"id": "105",
-					"label": "Fs系统",
-					"icon": "el-icon-menu",
-					"children": null,
-					"url": "/nav/node/fs"
-				},
-				{
-					"id": "106",
-					"label": "常用模块",
-					"icon": "el-icon-menu",
-					"children": [
-						{
-							"id": "107",
-							"label": "request",
-							"icon": "el-icon-menu",
-							"url": "/nav/node/request",
-							"children": null
-						},
-						{
-							"id": "108",
-							"label": "request",
-							"icon": "el-icon-menu",
-							"url": "/nav/node/request",
-							"children": null
-						}
-					]
-				}
-			]
+			activeIndex: getCookie('leftNavIndex') || '0',
+			navInfo: []
 		}
 	},
+	computed: {
+		...mapGetters(['leftNavInfo'])
+	},
 	methods: {
+		getLeftNav (module = window.sessionStorage.getItem('currentModule') || '1') {
+			this.navInfo = []
+			ajaxGet('/left-nav', {module: module}).then(res => {
+				if (res.data.code === 200) {
+					delCookies('leftNavIndex')
+					this.navInfo = res.data.body
+				}
+			})
+		},
 		handleOpen () {
 			console.log('open')
 		},
 		handleClose () {
 			console.log('close')
+		},
+		link (item) {
+			console.log(item)
+			if (item.url) {
+				setCookie('leftNavIndex', item.id)
+				this.$router.push(item.url)
+			} else {
+				console.log(item.url)
+			}
+		}
+	},
+	watch: {
+		leftNavInfo () {
+			this.getLeftNav()
 		}
 	}
 }
