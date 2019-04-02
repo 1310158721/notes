@@ -1,0 +1,12 @@
+2019-04-02T11:17:41.490+0800 I CONTROL  [initandlisten] MongoDB starting : pid=1131 port=19999 dbpath=/Users/hebao/Desktop/notes/mongodb/data 64-bit host=M0053.local
+2019-04-02T11:17:41.490+0800 I CONTROL  [initandlisten] db version v4.0.1
+2019-04-02T11:17:41.491+0800 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2019-04-02T11:17:41.491+0800 I CONTROL  [initandlisten] allocator: system
+2019-04-02T11:17:41.491+0800 I CONTROL  [initandlisten] modules: none
+2019-04-02T11:17:41.491+0800 I CONTROL  [initandlisten] build environment:
+2019-04-02T11:17:41.491+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-04-02T11:17:41.491+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-04-02T11:17:41.492+0800 I CONTROL  [initandlisten] options: { config: "./conf/mongod.conf", net: { port: 19999 }, processManagement: { fork: true }, storage: { dbPath: "data" }, systemLog: { destination: "file", path: "log/mongod.log" } }
+2019-04-02T11:17:41.492+0800 I STORAGE  [initandlisten] exception in initAndListen: DBPathInUse: Unable to lock the lock file: /Users/hebao/Desktop/notes/mongodb/data/mongod.lock (Resource temporarily unavailable). Another mongod instance is already running on the /Users/hebao/Desktop/notes/mongodb/data directory, terminating
+2019-04-02T11:17:41.492+0800 I CONTROL  [initandlisten] now exiting
+2019-04-02T11:17:41.492+0800 I CONTROL  [initandlisten] shutting down with code:100

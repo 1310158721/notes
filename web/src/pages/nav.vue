@@ -45,6 +45,7 @@ export default {
 			}
 			.main {
 				flex: 1;
+				height: calc(100vh - 80px);
 			}
 		}
 	}

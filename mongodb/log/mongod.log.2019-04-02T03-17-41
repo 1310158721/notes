@@ -1,0 +1,46 @@
+2019-04-02T11:16:22.653+0800 I CONTROL  [initandlisten] MongoDB starting : pid=1117 port=19999 dbpath=/Users/hebao/Desktop/notes/mongodb/data 64-bit host=M0053.local
+2019-04-02T11:16:22.654+0800 I CONTROL  [initandlisten] db version v4.0.1
+2019-04-02T11:16:22.654+0800 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2019-04-02T11:16:22.654+0800 I CONTROL  [initandlisten] allocator: system
+2019-04-02T11:16:22.654+0800 I CONTROL  [initandlisten] modules: none
+2019-04-02T11:16:22.655+0800 I CONTROL  [initandlisten] build environment:
+2019-04-02T11:16:22.655+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-04-02T11:16:22.655+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-04-02T11:16:22.655+0800 I CONTROL  [initandlisten] options: { config: "./conf/mongod.conf", net: { port: 19999 }, processManagement: { fork: true }, storage: { dbPath: "data" }, systemLog: { destination: "file", path: "log/mongod.log" } }
+2019-04-02T11:16:22.656+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-04-02T11:16:24.920+0800 I STORAGE  [initandlisten] WiredTiger message [1554174984:920217][1117:0x7fffb2bda3c0], txn-recover: Set global recovery timestamp: 0
+2019-04-02T11:16:26.402+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-04-02T11:16:28.173+0800 I CONTROL  [initandlisten] 
+2019-04-02T11:16:28.174+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-04-02T11:16:28.174+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-04-02T11:16:28.174+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-04-02T11:16:28.174+0800 I CONTROL  [initandlisten] 
+2019-04-02T11:16:28.175+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-04-02T11:16:28.175+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-04-02T11:16:28.175+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-04-02T11:16:28.175+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-04-02T11:16:28.175+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-04-02T11:16:28.176+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-04-02T11:16:28.176+0800 I CONTROL  [initandlisten] 
+2019-04-02T11:16:28.181+0800 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 50a9ccba-4af2-42e7-833a-32581e8af271
+2019-04-02T11:16:28.899+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.0
+2019-04-02T11:16:28.903+0800 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: fa76193f-baa0-4900-a3be-baa84c4fc59a
+2019-04-02T11:16:29.517+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/hebao/Desktop/notes/mongodb/data/diagnostic.data'
+2019-04-02T11:16:29.518+0800 I NETWORK  [initandlisten] waiting for connections on port 19999
+2019-04-02T11:16:29.518+0800 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 305bafac-fd36-4135-969b-4b4b25209ec1
+2019-04-02T11:16:30.583+0800 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2019-04-02T11:16:30.584+0800 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-04-02T11:16:30.674+0800 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2019-04-02T11:16:30.674+0800 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_msg 1156ms
+2019-04-02T11:17:50.233+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:62923 #1 (1 connection now open)
+2019-04-02T11:17:50.240+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:62923 conn1: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:17:50.264+0800 I NETWORK  [conn1] end connection 127.0.0.1:62923 (0 connections now open)
+2019-04-02T11:17:57.069+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:62938 #2 (1 connection now open)
+2019-04-02T11:17:57.070+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:62938 conn2: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:17:57.077+0800 I NETWORK  [conn2] end connection 127.0.0.1:62938 (0 connections now open)
+2019-04-02T11:18:08.080+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:62989 #3 (1 connection now open)
+2019-04-02T11:18:08.080+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:62989 conn3: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:18:08.088+0800 I NETWORK  [conn3] end connection 127.0.0.1:62989 (0 connections now open)
+2019-04-02T11:18:17.769+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:63036 #4 (1 connection now open)
+2019-04-02T11:18:17.769+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:63036 conn4: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:18:17.774+0800 I NETWORK  [conn4] end connection 127.0.0.1:63036 (0 connections now open)

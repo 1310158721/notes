@@ -1,0 +1,353 @@
+2019-04-02T11:20:35.059+0800 I CONTROL  [initandlisten] MongoDB starting : pid=1169 port=19999 dbpath=/Users/hebao/Desktop/notes/mongodb/data 64-bit host=M0053.local
+2019-04-02T11:20:35.060+0800 I CONTROL  [initandlisten] db version v4.0.1
+2019-04-02T11:20:35.060+0800 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2019-04-02T11:20:35.060+0800 I CONTROL  [initandlisten] allocator: system
+2019-04-02T11:20:35.060+0800 I CONTROL  [initandlisten] modules: none
+2019-04-02T11:20:35.061+0800 I CONTROL  [initandlisten] build environment:
+2019-04-02T11:20:35.061+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-04-02T11:20:35.061+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-04-02T11:20:35.061+0800 I CONTROL  [initandlisten] options: { config: "conf/mongod.conf", net: { port: 19999 }, processManagement: { fork: true }, storage: { dbPath: "data" }, systemLog: { destination: "file", path: "log/mongod.log" } }
+2019-04-02T11:20:35.062+0800 W STORAGE  [initandlisten] Detected unclean shutdown - /Users/hebao/Desktop/notes/mongodb/data/mongod.lock is not empty.
+2019-04-02T11:20:35.062+0800 I STORAGE  [initandlisten] Detected data files in /Users/hebao/Desktop/notes/mongodb/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-04-02T11:20:35.063+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-04-02T11:20:35.063+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-04-02T11:20:39.114+0800 I STORAGE  [initandlisten] WiredTiger message [1554175239:114793][1169:0x7fffb2bda3c0], txn-recover: Main recovery loop: starting at 1/21760
+2019-04-02T11:20:39.115+0800 I STORAGE  [initandlisten] WiredTiger message [1554175239:115493][1169:0x7fffb2bda3c0], txn-recover: Recovering log 1 through 2
+2019-04-02T11:20:39.229+0800 I STORAGE  [initandlisten] WiredTiger message [1554175239:229712][1169:0x7fffb2bda3c0], txn-recover: Recovering log 2 through 2
+2019-04-02T11:20:39.289+0800 I STORAGE  [initandlisten] WiredTiger message [1554175239:289169][1169:0x7fffb2bda3c0], txn-recover: Set global recovery timestamp: 0
+2019-04-02T11:20:40.760+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-04-02T11:20:42.620+0800 I CONTROL  [initandlisten] 
+2019-04-02T11:20:42.620+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-04-02T11:20:42.620+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-04-02T11:20:42.620+0800 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-04-02T11:20:42.620+0800 I CONTROL  [initandlisten] 
+2019-04-02T11:20:42.621+0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-04-02T11:20:42.621+0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-04-02T11:20:42.621+0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-04-02T11:20:42.621+0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-04-02T11:20:42.622+0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-04-02T11:20:42.622+0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-04-02T11:20:42.622+0800 I CONTROL  [initandlisten] 
+2019-04-02T11:20:43.208+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/hebao/Desktop/notes/mongodb/data/diagnostic.data'
+2019-04-02T11:20:43.209+0800 I NETWORK  [initandlisten] waiting for connections on port 19999
+2019-04-02T11:20:44.013+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2019-04-02T11:20:59.744+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:63724 #1 (1 connection now open)
+2019-04-02T11:20:59.745+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:63724 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2019-04-02T11:21:09.716+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:63771 #2 (2 connections now open)
+2019-04-02T11:21:09.716+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:63771 conn2: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:21:09.720+0800 I NETWORK  [conn2] end connection 127.0.0.1:63771 (1 connection now open)
+2019-04-02T11:21:19.019+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:63815 #3 (2 connections now open)
+2019-04-02T11:21:19.019+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:63815 conn3: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:21:19.022+0800 I NETWORK  [conn3] end connection 127.0.0.1:63815 (1 connection now open)
+2019-04-02T11:33:12.407+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50076 #4 (2 connections now open)
+2019-04-02T11:33:12.409+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50077 #5 (3 connections now open)
+2019-04-02T11:33:12.410+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50078 #6 (4 connections now open)
+2019-04-02T11:33:12.410+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50079 #7 (5 connections now open)
+2019-04-02T11:33:12.415+0800 I STORAGE  [conn4] createCollection: shop.js_modules with generated UUID: 2852540c-e085-4b90-8d01-dfca9f4ada54
+2019-04-02T11:33:13.317+0800 I STORAGE  [conn5] createCollection: shop.leftnavs with generated UUID: a7f0adf8-7168-4130-b75c-60f504beeed6
+2019-04-02T11:33:13.317+0800 I COMMAND  [conn4] command shop.js_modules command: create { create: "js_modules", idIndex: { name: "_id_", ns: "shop.js_modules", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 907ms
+2019-04-02T11:33:14.082+0800 I COMMAND  [conn5] command shop.leftnavs command: create { create: "leftnavs", idIndex: { name: "_id_", ns: "shop.leftnavs", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 907232 } } } protocol:op_query 1671ms
+2019-04-02T11:33:14.082+0800 I STORAGE  [conn6] createCollection: shop.headers with generated UUID: 4d44b501-18be-4bbf-82f9-d9fbc3fb9d17
+2019-04-02T11:33:14.867+0800 I COMMAND  [conn6] command shop.headers command: create { create: "headers", idIndex: { name: "_id_", ns: "shop.headers", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 1672107 } } } protocol:op_query 2456ms
+2019-04-02T11:33:14.867+0800 I STORAGE  [conn7] createCollection: shop.css_modules with generated UUID: 86ecfa19-7d1b-4bca-9c40-d57fe75cf9a1
+2019-04-02T11:33:16.248+0800 I COMMAND  [conn7] command shop.css_modules command: create { create: "css_modules", idIndex: { name: "_id_", ns: "shop.css_modules", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 2456645 } } } protocol:op_query 3837ms
+2019-04-02T11:33:16.249+0800 I COMMAND  [conn5] command shop.leftnavs command: insert { insert: "leftnavs", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "shop" } ninserted:7 keysInserted:7 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 2163743 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 2164ms
+2019-04-02T11:33:16.249+0800 I COMMAND  [conn4] command shop.js_modules command: insert { insert: "js_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "shop" } ninserted:2 keysInserted:2 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 2928611 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 2929ms
+2019-04-02T11:33:16.249+0800 I COMMAND  [conn6] command shop.headers command: insert { insert: "headers", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "shop" } ninserted:7 keysInserted:7 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 1378533 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 1379ms
+2019-04-02T11:33:16.252+0800 I STORAGE  [conn4] createCollection: shop.node_modules with generated UUID: de2c29f1-5e3b-4aa4-8c7a-ba4ee28f00bd
+2019-04-02T11:33:17.033+0800 I STORAGE  [conn6] createCollection: shop.mvvm_modules with generated UUID: 85384bc8-1d65-4786-b9e9-2b69d510da05
+2019-04-02T11:33:17.033+0800 I COMMAND  [conn4] command shop.node_modules command: create { create: "node_modules", idIndex: { ns: "shop.node_modules", name: "_id_", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 781ms
+2019-04-02T11:33:17.765+0800 I COMMAND  [conn6] command shop.mvvm_modules command: create { create: "mvvm_modules", idIndex: { name: "_id_", ns: "shop.mvvm_modules", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 781385 } } } protocol:op_query 1512ms
+2019-04-02T11:33:17.765+0800 I STORAGE  [conn7] createCollection: shop.users with generated UUID: 5ad3ea6d-8716-4d9a-80ec-2a5dd5b69523
+2019-04-02T11:33:18.526+0800 I STORAGE  [conn5] createCollection: shop.records_modules with generated UUID: 5a0ef7c5-82b0-4dad-bca4-bcd2ae177868
+2019-04-02T11:33:18.526+0800 I COMMAND  [conn7] command shop.users command: create { create: "users", idIndex: { name: "_id_", ns: "shop.users", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 1512849 } } } protocol:op_query 2274ms
+2019-04-02T11:33:19.346+0800 I COMMAND  [conn5] command shop.records_modules command: create { create: "records_modules", idIndex: { name: "_id_", ns: "shop.records_modules", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 2274142 } } } protocol:op_query 3094ms
+2019-04-02T11:33:19.347+0800 I COMMAND  [conn7] command shop.users command: insert { insert: "users", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "shop" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 818139 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 819ms
+2019-04-02T11:33:19.348+0800 I COMMAND  [conn4] command shop.node_modules command: insert { insert: "node_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "shop" } ninserted:2 keysInserted:2 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 2311510 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 2313ms
+2019-04-02T11:33:19.348+0800 I COMMAND  [conn6] command shop.mvvm_modules command: insert { insert: "mvvm_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "shop" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 1580194 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 1581ms
+2019-04-02T11:33:19.349+0800 I STORAGE  [conn7] createCollection: shop.iscroll_modules with generated UUID: 8bcf72a8-5317-4969-abdb-4dc10abeadb7
+2019-04-02T11:33:20.188+0800 I COMMAND  [conn7] command shop.iscroll_modules command: create { create: "iscroll_modules", idIndex: { name: "_id_", ns: "shop.iscroll_modules", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 839ms
+2019-04-02T11:33:20.188+0800 I STORAGE  [conn4] createCollection: shop.canvas_modules with generated UUID: feebd8c2-2dcf-4003-9597-a1d06af70afb
+2019-04-02T11:33:21.018+0800 I COMMAND  [conn4] command shop.canvas_modules command: create { create: "canvas_modules", idIndex: { ns: "shop.canvas_modules", name: "_id_", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 839606 } } } protocol:op_query 1669ms
+2019-04-02T11:33:21.018+0800 I STORAGE  [conn6] createCollection: shop.svg_modules with generated UUID: 87409394-1230-4ab0-8d97-a93b855537ed
+2019-04-02T11:33:21.838+0800 I COMMAND  [conn6] command shop.svg_modules command: create { create: "svg_modules", idIndex: { name: "_id_", ns: "shop.svg_modules", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 1669402 } } } protocol:op_query 2489ms
+2019-04-02T11:33:21.839+0800 I STORAGE  [conn7] createCollection: shop.swiper_modules with generated UUID: 94d95726-ab4f-464f-8f95-c153986cd7e9
+2019-04-02T11:33:21.839+0800 I COMMAND  [conn5] command shop.records_modules command: insert { insert: "records_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "shop" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 2481474 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 2482ms
+2019-04-02T11:33:22.603+0800 I COMMAND  [conn7] command shop.swiper_modules command: create { create: "swiper_modules", idIndex: { name: "_id_", ns: "shop.swiper_modules", key: { _id: 1 } }, $db: "shop" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 1640055 } } } protocol:op_query 2403ms
+2019-04-02T11:33:22.607+0800 I NETWORK  [conn4] end connection 127.0.0.1:50076 (4 connections now open)
+2019-04-02T11:33:22.607+0800 I NETWORK  [conn6] end connection 127.0.0.1:50078 (3 connections now open)
+2019-04-02T11:33:22.607+0800 I NETWORK  [conn5] end connection 127.0.0.1:50077 (2 connections now open)
+2019-04-02T11:33:22.614+0800 I NETWORK  [conn7] end connection 127.0.0.1:50079 (1 connection now open)
+2019-04-02T11:35:11.794+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50587 #8 (2 connections now open)
+2019-04-02T11:35:11.834+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50588 #9 (3 connections now open)
+2019-04-02T11:35:11.834+0800 I STORAGE  [conn8] createCollection: note.headers with generated UUID: 74f06a59-10ea-47e5-8c8b-042c8866412c
+2019-04-02T11:35:11.835+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50589 #10 (4 connections now open)
+2019-04-02T11:35:12.596+0800 I STORAGE  [conn9] createCollection: note.leftnavs with generated UUID: a2abfcc3-86cf-43e5-a7f8-248e5b6f7d1d
+2019-04-02T11:35:12.596+0800 I COMMAND  [conn8] command note.headers command: create { create: "headers", idIndex: { name: "_id_", ns: "note.headers", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 761ms
+2019-04-02T11:35:13.371+0800 I COMMAND  [conn9] command note.leftnavs command: create { create: "leftnavs", idIndex: { name: "_id_", ns: "note.leftnavs", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 760842 } } } protocol:op_query 1536ms
+2019-04-02T11:35:13.372+0800 I COMMAND  [conn10] command note.$cmd command: listCollections { listCollections: 1, cursor: { batchSize: 0 }, $db: "note" } numYields:0 reslen:129 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 }, acquireWaitCount: { r: 1 }, timeAcquiringMicros: { r: 1536218 } }, Collection: { acquireCount: { r: 2 } } } protocol:op_query 1536ms
+2019-04-02T11:35:13.373+0800 I COMMAND  [conn8] command note.headers command: insert { insert: "headers", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "note" } ninserted:7 keysInserted:7 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 773987 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 775ms
+2019-04-02T11:35:13.374+0800 I STORAGE  [conn10] createCollection: note.css_modules with generated UUID: 14226634-1ff2-45eb-892a-046f66d8a15c
+2019-04-02T11:35:13.374+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:50598 #11 (5 connections now open)
+2019-04-02T11:35:14.078+0800 I COMMAND  [conn10] command note.css_modules command: create { create: "css_modules", idIndex: { name: "_id_", ns: "note.css_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 703ms
+2019-04-02T11:35:14.078+0800 I STORAGE  [conn8] createCollection: note.js_modules with generated UUID: 83533c06-7129-45e9-8c70-9dbd45762c02
+2019-04-02T11:35:14.809+0800 I STORAGE  [conn9] createCollection: note.records_modules with generated UUID: cc2dfea0-a6e5-42aa-80dc-f9bf17ffe7b8
+2019-04-02T11:35:14.809+0800 I COMMAND  [conn8] command note.js_modules command: create { create: "js_modules", idIndex: { name: "_id_", ns: "note.js_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 703764 } } } protocol:op_query 1434ms
+2019-04-02T11:35:15.921+0800 I COMMAND  [conn9] command note.records_modules command: create { create: "records_modules", idIndex: { name: "_id_", ns: "note.records_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 1433736 } } } protocol:op_query 2546ms
+2019-04-02T11:35:15.921+0800 I STORAGE  [conn11] createCollection: note.node_modules with generated UUID: 67ac282b-13d7-4a0d-8c28-8520b6fc3a6a
+2019-04-02T11:35:16.753+0800 I COMMAND  [conn11] command note.node_modules command: create { create: "node_modules", idIndex: { name: "_id_", ns: "note.node_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 2545849 } } } protocol:op_query 3377ms
+2019-04-02T11:35:16.754+0800 I COMMAND  [conn10] command note.css_modules command: insert { insert: "css_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "note" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 2672666 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 2674ms
+2019-04-02T11:35:16.755+0800 I COMMAND  [conn8] command note.js_modules command: insert { insert: "js_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "note" } ninserted:2 keysInserted:2 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 1931917 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 1934ms
+2019-04-02T11:35:16.756+0800 I COMMAND  [conn9] command note.records_modules command: insert { insert: "records_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "note" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 817515 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 820ms
+2019-04-02T11:35:16.756+0800 I STORAGE  [conn10] createCollection: note.mvvm_modules with generated UUID: d1dfd978-9330-4eac-9bf5-0f33a6311bbe
+2019-04-02T11:35:17.560+0800 I STORAGE  [conn8] createCollection: note.users with generated UUID: 21d9deac-fdbc-4b00-a0b1-d9749c24bfb0
+2019-04-02T11:35:17.560+0800 I COMMAND  [conn10] command note.mvvm_modules command: create { create: "mvvm_modules", idIndex: { name: "_id_", ns: "note.mvvm_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 789 } } } protocol:op_query 804ms
+2019-04-02T11:35:18.342+0800 I STORAGE  [conn11] createCollection: note.canvas_modules with generated UUID: 41331dad-bda1-4abf-82c9-7bfab52b6d55
+2019-04-02T11:35:18.342+0800 I COMMAND  [conn8] command note.users command: create { create: "users", idIndex: { name: "_id_", ns: "note.users", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 803647 } } } protocol:op_query 1585ms
+2019-04-02T11:35:19.358+0800 I COMMAND  [conn11] command note.canvas_modules command: create { create: "canvas_modules", idIndex: { name: "_id_", ns: "note.canvas_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 1584864 } } } protocol:op_query 2601ms
+2019-04-02T11:35:19.358+0800 I STORAGE  [conn9] createCollection: note.iscroll_modules with generated UUID: 80e0c0a8-e8e1-4ef4-ab60-e829ea5ecafc
+2019-04-02T11:35:20.128+0800 I COMMAND  [conn9] command note.iscroll_modules command: create { create: "iscroll_modules", idIndex: { name: "_id_", ns: "note.iscroll_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 2601389 } } } protocol:op_query 3370ms
+2019-04-02T11:35:20.129+0800 I COMMAND  [conn10] command note.mvvm_modules command: insert { insert: "mvvm_modules", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "note" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 2565933 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 2567ms
+2019-04-02T11:35:20.129+0800 I COMMAND  [conn8] command note.users command: insert { insert: "users", writeConcern: { getLastError: 1, w: 1 }, ordered: false, $db: "note" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 1784388 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 1786ms
+2019-04-02T11:35:20.129+0800 I STORAGE  [conn11] createCollection: note.svg_modules with generated UUID: ca9ab9bc-f68e-48b5-bde4-b6570653d60d
+2019-04-02T11:35:20.924+0800 I STORAGE  [conn10] createCollection: note.swiper_modules with generated UUID: dfb70990-4223-454d-9aa7-cf88bdbd7c64
+2019-04-02T11:35:20.924+0800 I COMMAND  [conn11] command note.svg_modules command: create { create: "svg_modules", idIndex: { name: "_id_", ns: "note.svg_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 769363 } } } protocol:op_query 1563ms
+2019-04-02T11:35:22.031+0800 I COMMAND  [conn10] command note.swiper_modules command: create { create: "swiper_modules", idIndex: { name: "_id_", ns: "note.swiper_modules", key: { _id: 1 } }, $db: "note" } numYields:0 reslen:53 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 793675 } } } protocol:op_query 1901ms
+2019-04-02T11:35:22.047+0800 I NETWORK  [conn8] end connection 127.0.0.1:50587 (4 connections now open)
+2019-04-02T11:35:22.048+0800 I NETWORK  [conn9] end connection 127.0.0.1:50588 (3 connections now open)
+2019-04-02T11:35:22.048+0800 I NETWORK  [conn10] end connection 127.0.0.1:50589 (2 connections now open)
+2019-04-02T11:35:22.049+0800 I NETWORK  [conn11] end connection 127.0.0.1:50598 (1 connection now open)
+2019-04-02T11:35:58.050+0800 I COMMAND  [conn1] CMD: drop shop.shop
+2019-04-02T11:36:40.325+0800 I COMMAND  [conn1] dropDatabase shop - starting
+2019-04-02T11:36:40.325+0800 I COMMAND  [conn1] dropDatabase shop - dropping 0 collections
+2019-04-02T11:36:43.393+0800 I COMMAND  [conn1] dropDatabase shop - finished
+2019-04-02T11:36:43.394+0800 I COMMAND  [conn1] command shop appName: "MongoDB Shell" command: dropDatabase { dropDatabase: 1.0, lsid: { id: UUID("a86857f8-4bd6-4c97-a43e-82996a87eb18") }, $db: "shop" } numYields:0 reslen:56 locks:{ Global: { acquireCount: { r: 2, w: 1, W: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_msg 3068ms
+2019-04-02T11:36:43.394+0800 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 0, after asserts: 0, after backgroundFlushing: 0, after connections: 0, after dur: 0, after extra_info: 0, after freeMonitoring: 0, after globalLock: 0, after locks: 0, after logicalSessionRecordCache: 0, after network: 0, after opLatencies: 0, after opcounters: 0, after opcountersRepl: 0, after repl: 0, after security: 0, after storageEngine: 0, after transactions: 0, after wiredTiger: 2388, at end: 2388 }
+2019-04-02T11:38:03.744+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51343 #12 (2 connections now open)
+2019-04-02T11:38:03.745+0800 I NETWORK  [conn12] received client metadata from 127.0.0.1:51343 conn12: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:03.755+0800 I NETWORK  [conn12] end connection 127.0.0.1:51343 (1 connection now open)
+2019-04-02T11:38:03.829+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51350 #13 (2 connections now open)
+2019-04-02T11:38:03.832+0800 I NETWORK  [conn13] received client metadata from 127.0.0.1:51350 conn13: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:03.841+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51351 #14 (3 connections now open)
+2019-04-02T11:38:03.845+0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:51351 conn14: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:03.862+0800 I NETWORK  [conn13] end connection 127.0.0.1:51350 (2 connections now open)
+2019-04-02T11:38:03.869+0800 I NETWORK  [conn14] end connection 127.0.0.1:51351 (1 connection now open)
+2019-04-02T11:38:06.042+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51363 #15 (2 connections now open)
+2019-04-02T11:38:06.043+0800 I NETWORK  [conn15] received client metadata from 127.0.0.1:51363 conn15: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:06.050+0800 I NETWORK  [conn15] end connection 127.0.0.1:51363 (1 connection now open)
+2019-04-02T11:38:08.142+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51376 #16 (2 connections now open)
+2019-04-02T11:38:08.143+0800 I NETWORK  [conn16] received client metadata from 127.0.0.1:51376 conn16: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:08.154+0800 I NETWORK  [conn16] end connection 127.0.0.1:51376 (1 connection now open)
+2019-04-02T11:38:09.739+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51388 #17 (2 connections now open)
+2019-04-02T11:38:09.740+0800 I NETWORK  [conn17] received client metadata from 127.0.0.1:51388 conn17: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:09.751+0800 I NETWORK  [conn17] end connection 127.0.0.1:51388 (1 connection now open)
+2019-04-02T11:38:10.081+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51392 #18 (2 connections now open)
+2019-04-02T11:38:10.082+0800 I NETWORK  [conn18] received client metadata from 127.0.0.1:51392 conn18: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:10.088+0800 I NETWORK  [conn18] end connection 127.0.0.1:51392 (1 connection now open)
+2019-04-02T11:38:10.685+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51402 #19 (2 connections now open)
+2019-04-02T11:38:10.686+0800 I NETWORK  [conn19] received client metadata from 127.0.0.1:51402 conn19: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:10.692+0800 I NETWORK  [conn19] end connection 127.0.0.1:51402 (1 connection now open)
+2019-04-02T11:38:11.420+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51406 #20 (2 connections now open)
+2019-04-02T11:38:11.420+0800 I NETWORK  [conn20] received client metadata from 127.0.0.1:51406 conn20: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:11.426+0800 I NETWORK  [conn20] end connection 127.0.0.1:51406 (1 connection now open)
+2019-04-02T11:38:12.080+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51414 #21 (2 connections now open)
+2019-04-02T11:38:12.081+0800 I NETWORK  [conn21] received client metadata from 127.0.0.1:51414 conn21: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:12.089+0800 I NETWORK  [conn21] end connection 127.0.0.1:51414 (1 connection now open)
+2019-04-02T11:38:13.192+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51422 #22 (2 connections now open)
+2019-04-02T11:38:13.193+0800 I NETWORK  [conn22] received client metadata from 127.0.0.1:51422 conn22: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:13.202+0800 I NETWORK  [conn22] end connection 127.0.0.1:51422 (1 connection now open)
+2019-04-02T11:38:18.434+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51447 #23 (2 connections now open)
+2019-04-02T11:38:18.440+0800 I NETWORK  [conn23] received client metadata from 127.0.0.1:51447 conn23: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:18.451+0800 I NETWORK  [conn23] end connection 127.0.0.1:51447 (1 connection now open)
+2019-04-02T11:38:18.489+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51451 #24 (2 connections now open)
+2019-04-02T11:38:18.489+0800 I NETWORK  [conn24] received client metadata from 127.0.0.1:51451 conn24: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:18.500+0800 I NETWORK  [conn24] end connection 127.0.0.1:51451 (1 connection now open)
+2019-04-02T11:38:20.765+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51467 #25 (2 connections now open)
+2019-04-02T11:38:20.766+0800 I NETWORK  [conn25] received client metadata from 127.0.0.1:51467 conn25: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:20.770+0800 I NETWORK  [conn25] end connection 127.0.0.1:51467 (1 connection now open)
+2019-04-02T11:38:20.803+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51471 #26 (2 connections now open)
+2019-04-02T11:38:20.804+0800 I NETWORK  [conn26] received client metadata from 127.0.0.1:51471 conn26: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:20.819+0800 I NETWORK  [conn26] end connection 127.0.0.1:51471 (1 connection now open)
+2019-04-02T11:38:23.541+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51484 #27 (2 connections now open)
+2019-04-02T11:38:23.545+0800 I NETWORK  [conn27] received client metadata from 127.0.0.1:51484 conn27: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:23.551+0800 I NETWORK  [conn27] end connection 127.0.0.1:51484 (1 connection now open)
+2019-04-02T11:38:23.579+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51488 #28 (2 connections now open)
+2019-04-02T11:38:23.579+0800 I NETWORK  [conn28] received client metadata from 127.0.0.1:51488 conn28: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:23.592+0800 I NETWORK  [conn28] end connection 127.0.0.1:51488 (1 connection now open)
+2019-04-02T11:38:25.685+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51504 #29 (2 connections now open)
+2019-04-02T11:38:25.686+0800 I NETWORK  [conn29] received client metadata from 127.0.0.1:51504 conn29: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:25.690+0800 I NETWORK  [conn29] end connection 127.0.0.1:51504 (1 connection now open)
+2019-04-02T11:38:25.717+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51508 #30 (2 connections now open)
+2019-04-02T11:38:25.718+0800 I NETWORK  [conn30] received client metadata from 127.0.0.1:51508 conn30: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:25.732+0800 I NETWORK  [conn30] end connection 127.0.0.1:51508 (1 connection now open)
+2019-04-02T11:38:27.709+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51520 #31 (2 connections now open)
+2019-04-02T11:38:27.710+0800 I NETWORK  [conn31] received client metadata from 127.0.0.1:51520 conn31: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:27.714+0800 I NETWORK  [conn31] end connection 127.0.0.1:51520 (1 connection now open)
+2019-04-02T11:38:27.734+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51524 #32 (2 connections now open)
+2019-04-02T11:38:27.734+0800 I NETWORK  [conn32] received client metadata from 127.0.0.1:51524 conn32: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:27.750+0800 I NETWORK  [conn32] end connection 127.0.0.1:51524 (1 connection now open)
+2019-04-02T11:38:31.101+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51541 #33 (2 connections now open)
+2019-04-02T11:38:31.102+0800 I NETWORK  [conn33] received client metadata from 127.0.0.1:51541 conn33: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:31.107+0800 I NETWORK  [conn33] end connection 127.0.0.1:51541 (1 connection now open)
+2019-04-02T11:38:31.134+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51545 #34 (2 connections now open)
+2019-04-02T11:38:31.135+0800 I NETWORK  [conn34] received client metadata from 127.0.0.1:51545 conn34: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:31.148+0800 I NETWORK  [conn34] end connection 127.0.0.1:51545 (1 connection now open)
+2019-04-02T11:38:35.156+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51565 #35 (2 connections now open)
+2019-04-02T11:38:35.158+0800 I NETWORK  [conn35] received client metadata from 127.0.0.1:51565 conn35: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:35.164+0800 I NETWORK  [conn35] end connection 127.0.0.1:51565 (1 connection now open)
+2019-04-02T11:38:35.188+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51569 #36 (2 connections now open)
+2019-04-02T11:38:35.188+0800 I NETWORK  [conn36] received client metadata from 127.0.0.1:51569 conn36: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:35.209+0800 I NETWORK  [conn36] end connection 127.0.0.1:51569 (1 connection now open)
+2019-04-02T11:38:38.153+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51586 #37 (2 connections now open)
+2019-04-02T11:38:38.154+0800 I NETWORK  [conn37] received client metadata from 127.0.0.1:51586 conn37: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:38.159+0800 I NETWORK  [conn37] end connection 127.0.0.1:51586 (1 connection now open)
+2019-04-02T11:38:38.187+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51590 #38 (2 connections now open)
+2019-04-02T11:38:38.190+0800 I NETWORK  [conn38] received client metadata from 127.0.0.1:51590 conn38: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:38.205+0800 I NETWORK  [conn38] end connection 127.0.0.1:51590 (1 connection now open)
+2019-04-02T11:38:40.905+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51606 #39 (2 connections now open)
+2019-04-02T11:38:40.907+0800 I NETWORK  [conn39] received client metadata from 127.0.0.1:51606 conn39: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:40.914+0800 I NETWORK  [conn39] end connection 127.0.0.1:51606 (1 connection now open)
+2019-04-02T11:38:40.937+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51610 #40 (2 connections now open)
+2019-04-02T11:38:40.937+0800 I NETWORK  [conn40] received client metadata from 127.0.0.1:51610 conn40: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:40.967+0800 I NETWORK  [conn40] end connection 127.0.0.1:51610 (1 connection now open)
+2019-04-02T11:38:44.155+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51626 #41 (2 connections now open)
+2019-04-02T11:38:44.156+0800 I NETWORK  [conn41] received client metadata from 127.0.0.1:51626 conn41: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:44.163+0800 I NETWORK  [conn41] end connection 127.0.0.1:51626 (1 connection now open)
+2019-04-02T11:38:44.183+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51630 #42 (2 connections now open)
+2019-04-02T11:38:44.184+0800 I NETWORK  [conn42] received client metadata from 127.0.0.1:51630 conn42: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:44.199+0800 I NETWORK  [conn42] end connection 127.0.0.1:51630 (1 connection now open)
+2019-04-02T11:38:46.884+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51646 #43 (2 connections now open)
+2019-04-02T11:38:46.885+0800 I NETWORK  [conn43] received client metadata from 127.0.0.1:51646 conn43: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:46.887+0800 I NETWORK  [conn43] end connection 127.0.0.1:51646 (1 connection now open)
+2019-04-02T11:38:46.908+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51650 #44 (2 connections now open)
+2019-04-02T11:38:46.909+0800 I NETWORK  [conn44] received client metadata from 127.0.0.1:51650 conn44: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:46.936+0800 I NETWORK  [conn44] end connection 127.0.0.1:51650 (1 connection now open)
+2019-04-02T11:38:48.892+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51662 #45 (2 connections now open)
+2019-04-02T11:38:48.893+0800 I NETWORK  [conn45] received client metadata from 127.0.0.1:51662 conn45: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:48.897+0800 I NETWORK  [conn45] end connection 127.0.0.1:51662 (1 connection now open)
+2019-04-02T11:38:48.917+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51666 #46 (2 connections now open)
+2019-04-02T11:38:48.919+0800 I NETWORK  [conn46] received client metadata from 127.0.0.1:51666 conn46: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:48.938+0800 I NETWORK  [conn46] end connection 127.0.0.1:51666 (1 connection now open)
+2019-04-02T11:38:51.147+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51678 #47 (2 connections now open)
+2019-04-02T11:38:51.148+0800 I NETWORK  [conn47] received client metadata from 127.0.0.1:51678 conn47: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:51.153+0800 I NETWORK  [conn47] end connection 127.0.0.1:51678 (1 connection now open)
+2019-04-02T11:38:51.177+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51682 #48 (2 connections now open)
+2019-04-02T11:38:51.178+0800 I NETWORK  [conn48] received client metadata from 127.0.0.1:51682 conn48: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:51.195+0800 I NETWORK  [conn48] end connection 127.0.0.1:51682 (1 connection now open)
+2019-04-02T11:38:53.484+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51694 #49 (2 connections now open)
+2019-04-02T11:38:53.485+0800 I NETWORK  [conn49] received client metadata from 127.0.0.1:51694 conn49: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:53.488+0800 I NETWORK  [conn49] end connection 127.0.0.1:51694 (1 connection now open)
+2019-04-02T11:38:53.508+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51698 #50 (2 connections now open)
+2019-04-02T11:38:53.510+0800 I NETWORK  [conn50] received client metadata from 127.0.0.1:51698 conn50: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:53.529+0800 I NETWORK  [conn50] end connection 127.0.0.1:51698 (1 connection now open)
+2019-04-02T11:38:55.667+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51710 #51 (2 connections now open)
+2019-04-02T11:38:55.668+0800 I NETWORK  [conn51] received client metadata from 127.0.0.1:51710 conn51: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:55.672+0800 I NETWORK  [conn51] end connection 127.0.0.1:51710 (1 connection now open)
+2019-04-02T11:38:55.688+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51714 #52 (2 connections now open)
+2019-04-02T11:38:55.691+0800 I NETWORK  [conn52] received client metadata from 127.0.0.1:51714 conn52: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:55.712+0800 I NETWORK  [conn52] end connection 127.0.0.1:51714 (1 connection now open)
+2019-04-02T11:38:57.852+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51730 #53 (2 connections now open)
+2019-04-02T11:38:57.852+0800 I NETWORK  [conn53] received client metadata from 127.0.0.1:51730 conn53: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:57.857+0800 I NETWORK  [conn53] end connection 127.0.0.1:51730 (1 connection now open)
+2019-04-02T11:38:57.875+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51734 #54 (2 connections now open)
+2019-04-02T11:38:57.879+0800 I NETWORK  [conn54] received client metadata from 127.0.0.1:51734 conn54: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:38:57.907+0800 I NETWORK  [conn54] end connection 127.0.0.1:51734 (1 connection now open)
+2019-04-02T11:39:00.510+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51746 #55 (2 connections now open)
+2019-04-02T11:39:00.511+0800 I NETWORK  [conn55] received client metadata from 127.0.0.1:51746 conn55: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:00.522+0800 I NETWORK  [conn55] end connection 127.0.0.1:51746 (1 connection now open)
+2019-04-02T11:39:00.551+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51750 #56 (2 connections now open)
+2019-04-02T11:39:00.552+0800 I NETWORK  [conn56] received client metadata from 127.0.0.1:51750 conn56: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:00.574+0800 I NETWORK  [conn56] end connection 127.0.0.1:51750 (1 connection now open)
+2019-04-02T11:39:02.915+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51766 #57 (2 connections now open)
+2019-04-02T11:39:02.916+0800 I NETWORK  [conn57] received client metadata from 127.0.0.1:51766 conn57: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:02.920+0800 I NETWORK  [conn57] end connection 127.0.0.1:51766 (1 connection now open)
+2019-04-02T11:39:02.942+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51770 #58 (2 connections now open)
+2019-04-02T11:39:02.945+0800 I NETWORK  [conn58] received client metadata from 127.0.0.1:51770 conn58: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:02.975+0800 I NETWORK  [conn58] end connection 127.0.0.1:51770 (1 connection now open)
+2019-04-02T11:39:11.922+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51806 #59 (2 connections now open)
+2019-04-02T11:39:11.922+0800 I NETWORK  [conn59] received client metadata from 127.0.0.1:51806 conn59: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:11.949+0800 I NETWORK  [conn59] end connection 127.0.0.1:51806 (1 connection now open)
+2019-04-02T11:39:16.713+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51833 #60 (2 connections now open)
+2019-04-02T11:39:16.713+0800 I NETWORK  [conn60] received client metadata from 127.0.0.1:51833 conn60: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:16.719+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51838 #61 (3 connections now open)
+2019-04-02T11:39:16.725+0800 I NETWORK  [conn61] received client metadata from 127.0.0.1:51838 conn61: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:16.726+0800 I NETWORK  [conn60] end connection 127.0.0.1:51833 (2 connections now open)
+2019-04-02T11:39:16.732+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51839 #62 (3 connections now open)
+2019-04-02T11:39:16.736+0800 I NETWORK  [conn62] received client metadata from 127.0.0.1:51839 conn62: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:16.738+0800 I NETWORK  [conn61] end connection 127.0.0.1:51838 (2 connections now open)
+2019-04-02T11:39:16.753+0800 I NETWORK  [conn62] end connection 127.0.0.1:51839 (1 connection now open)
+2019-04-02T11:39:17.965+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51850 #63 (2 connections now open)
+2019-04-02T11:39:17.965+0800 I NETWORK  [conn63] received client metadata from 127.0.0.1:51850 conn63: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:17.984+0800 I NETWORK  [conn63] end connection 127.0.0.1:51850 (1 connection now open)
+2019-04-02T11:39:20.409+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:51867 #64 (2 connections now open)
+2019-04-02T11:39:20.409+0800 I NETWORK  [conn64] received client metadata from 127.0.0.1:51867 conn64: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:39:20.423+0800 I NETWORK  [conn64] end connection 127.0.0.1:51867 (1 connection now open)
+2019-04-02T11:42:29.373+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52647 #65 (2 connections now open)
+2019-04-02T11:42:29.374+0800 I NETWORK  [conn65] received client metadata from 127.0.0.1:52647 conn65: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:42:29.380+0800 I NETWORK  [conn65] end connection 127.0.0.1:52647 (1 connection now open)
+2019-04-02T11:42:32.971+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52667 #66 (2 connections now open)
+2019-04-02T11:42:32.972+0800 I NETWORK  [conn66] received client metadata from 127.0.0.1:52667 conn66: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:42:32.985+0800 I NETWORK  [conn66] end connection 127.0.0.1:52667 (1 connection now open)
+2019-04-02T11:43:11.823+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52833 #67 (2 connections now open)
+2019-04-02T11:43:11.823+0800 I NETWORK  [conn67] received client metadata from 127.0.0.1:52833 conn67: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:43:11.828+0800 I NETWORK  [conn67] end connection 127.0.0.1:52833 (1 connection now open)
+2019-04-02T11:43:12.941+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52841 #68 (2 connections now open)
+2019-04-02T11:43:12.942+0800 I NETWORK  [conn68] received client metadata from 127.0.0.1:52841 conn68: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:43:12.952+0800 I NETWORK  [conn68] end connection 127.0.0.1:52841 (1 connection now open)
+2019-04-02T11:43:14.275+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52849 #69 (2 connections now open)
+2019-04-02T11:43:14.275+0800 I NETWORK  [conn69] received client metadata from 127.0.0.1:52849 conn69: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:43:14.283+0800 I NETWORK  [conn69] end connection 127.0.0.1:52849 (1 connection now open)
+2019-04-02T11:43:17.350+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52869 #70 (2 connections now open)
+2019-04-02T11:43:17.351+0800 I NETWORK  [conn70] received client metadata from 127.0.0.1:52869 conn70: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:43:17.357+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52874 #71 (3 connections now open)
+2019-04-02T11:43:17.360+0800 I NETWORK  [conn71] received client metadata from 127.0.0.1:52874 conn71: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:43:17.361+0800 I NETWORK  [conn70] end connection 127.0.0.1:52869 (2 connections now open)
+2019-04-02T11:43:17.364+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52875 #72 (3 connections now open)
+2019-04-02T11:43:17.367+0800 I NETWORK  [conn72] received client metadata from 127.0.0.1:52875 conn72: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:43:17.369+0800 I NETWORK  [conn71] end connection 127.0.0.1:52874 (2 connections now open)
+2019-04-02T11:43:17.378+0800 I NETWORK  [conn72] end connection 127.0.0.1:52875 (1 connection now open)
+2019-04-02T11:43:20.202+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:52893 #73 (2 connections now open)
+2019-04-02T11:43:20.203+0800 I NETWORK  [conn73] received client metadata from 127.0.0.1:52893 conn73: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:43:20.214+0800 I NETWORK  [conn73] end connection 127.0.0.1:52893 (1 connection now open)
+2019-04-02T11:44:23.304+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:53162 #74 (2 connections now open)
+2019-04-02T11:44:23.305+0800 I NETWORK  [conn74] received client metadata from 127.0.0.1:53162 conn74: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:44:23.308+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:53164 #75 (3 connections now open)
+2019-04-02T11:44:23.310+0800 I NETWORK  [conn75] received client metadata from 127.0.0.1:53164 conn75: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:44:23.314+0800 I NETWORK  [conn74] end connection 127.0.0.1:53162 (2 connections now open)
+2019-04-02T11:44:23.319+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:53168 #76 (3 connections now open)
+2019-04-02T11:44:23.320+0800 I NETWORK  [conn76] received client metadata from 127.0.0.1:53168 conn76: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:44:23.322+0800 I NETWORK  [conn75] end connection 127.0.0.1:53164 (2 connections now open)
+2019-04-02T11:44:23.333+0800 I NETWORK  [conn76] end connection 127.0.0.1:53168 (1 connection now open)
+2019-04-02T11:44:27.272+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:53191 #77 (2 connections now open)
+2019-04-02T11:44:27.273+0800 I NETWORK  [conn77] received client metadata from 127.0.0.1:53191 conn77: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:44:27.285+0800 I NETWORK  [conn77] end connection 127.0.0.1:53191 (1 connection now open)
+2019-04-02T11:44:39.465+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:53254 #78 (2 connections now open)
+2019-04-02T11:44:39.465+0800 I NETWORK  [conn78] received client metadata from 127.0.0.1:53254 conn78: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:44:39.469+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:53256 #79 (3 connections now open)
+2019-04-02T11:44:39.477+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:53257 #80 (4 connections now open)
+2019-04-02T11:44:39.478+0800 I NETWORK  [conn79] received client metadata from 127.0.0.1:53256 conn79: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:44:39.479+0800 I NETWORK  [conn80] received client metadata from 127.0.0.1:53257 conn80: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:44:39.479+0800 I NETWORK  [conn78] end connection 127.0.0.1:53254 (3 connections now open)
+2019-04-02T11:44:39.492+0800 I NETWORK  [conn79] end connection 127.0.0.1:53256 (2 connections now open)
+2019-04-02T11:44:39.498+0800 I NETWORK  [conn80] end connection 127.0.0.1:53257 (1 connection now open)
+2019-04-02T11:48:56.125+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:54328 #81 (2 connections now open)
+2019-04-02T11:48:56.178+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:54329 #82 (3 connections now open)
+2019-04-02T11:48:56.178+0800 I NETWORK  [conn81] received client metadata from 127.0.0.1:54328 conn81: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:48:56.178+0800 I NETWORK  [conn82] received client metadata from 127.0.0.1:54329 conn82: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:48:56.185+0800 I NETWORK  [conn81] end connection 127.0.0.1:54328 (2 connections now open)
+2019-04-02T11:48:56.186+0800 I NETWORK  [conn82] end connection 127.0.0.1:54329 (1 connection now open)
+2019-04-02T11:49:05.629+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:54378 #83 (2 connections now open)
+2019-04-02T11:49:05.630+0800 I NETWORK  [conn83] received client metadata from 127.0.0.1:54378 conn83: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:49:05.644+0800 I NETWORK  [conn83] end connection 127.0.0.1:54378 (1 connection now open)
+2019-04-02T11:49:10.687+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:54402 #84 (2 connections now open)
+2019-04-02T11:49:10.687+0800 I NETWORK  [conn84] received client metadata from 127.0.0.1:54402 conn84: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:49:10.700+0800 I NETWORK  [conn84] end connection 127.0.0.1:54402 (1 connection now open)
+2019-04-02T11:49:23.600+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:54461 #85 (2 connections now open)
+2019-04-02T11:49:23.601+0800 I NETWORK  [conn85] received client metadata from 127.0.0.1:54461 conn85: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:49:23.610+0800 I NETWORK  [conn85] end connection 127.0.0.1:54461 (1 connection now open)
+2019-04-02T11:49:25.285+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:54469 #86 (2 connections now open)
+2019-04-02T11:49:25.286+0800 I NETWORK  [conn86] received client metadata from 127.0.0.1:54469 conn86: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:49:25.296+0800 I NETWORK  [conn86] end connection 127.0.0.1:54469 (1 connection now open)
+2019-04-02T11:49:29.180+0800 I NETWORK  [listener] connection accepted from 127.0.0.1:54489 #87 (2 connections now open)
+2019-04-02T11:49:29.181+0800 I NETWORK  [conn87] received client metadata from 127.0.0.1:54489 conn87: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "16.7.0" }, platform: "Node.js v8.11.2, LE, mongodb-core: 3.1.11" }
+2019-04-02T11:49:29.192+0800 I NETWORK  [conn87] end connection 127.0.0.1:54489 (1 connection now open)
